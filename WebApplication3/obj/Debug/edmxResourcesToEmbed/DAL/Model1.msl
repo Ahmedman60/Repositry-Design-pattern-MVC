@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ADODotNetDemoModelStoreContainer" CdmEntityContainer="ADODotNetDemoEntities">
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="ADODotNetDemoModel.Department">
+        <MappingFragment StoreEntitySet="Departments">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="ADODotNetDemoModel.Employee">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Job" ColumnName="Job" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="ADODotNetDemoModel.Employee">
+        <ModificationFunctionMapping>
+          <DeleteFunction FunctionName="ADODotNetDemoModel.Store.sp_EmployeesDelete">
+            <ScalarProperty Name="ID" ParameterName="ID" />
+          </DeleteFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="fn_All" FunctionName="ADODotNetDemoModel.Store.fn_All">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ADODotNetDemoModel.fn_All_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="Job" ColumnName="Job" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_DeparmentInsert" FunctionName="ADODotNetDemoModel.Store.sp_DeparmentInsert" />
+    <FunctionImportMapping FunctionImportName="sp_departmentReadAll" FunctionName="ADODotNetDemoModel.Store.sp_departmentReadAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ADODotNetDemoModel.sp_departmentReadAll_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_EmployeesDelete" FunctionName="ADODotNetDemoModel.Store.sp_EmployeesDelete" />
+    <FunctionImportMapping FunctionImportName="sp_EmployeesInsert" FunctionName="ADODotNetDemoModel.Store.sp_EmployeesInsert" />
+    <FunctionImportMapping FunctionImportName="sp_EmployeesReadAll" FunctionName="ADODotNetDemoModel.Store.sp_EmployeesReadAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ADODotNetDemoModel.sp_EmployeesReadAll_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Job" ColumnName="Job" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_EmployeesReadByID" FunctionName="ADODotNetDemoModel.Store.sp_EmployeesReadByID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ADODotNetDemoModel.sp_EmployeesReadByID_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Job" ColumnName="Job" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_EmployeesUpdate" FunctionName="ADODotNetDemoModel.Store.sp_EmployeesUpdate" />
+  </EntityContainerMapping>
+</Mapping>

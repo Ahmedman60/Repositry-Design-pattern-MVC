@@ -1,0 +1,5 @@
+http://www.htmldrive.net/
+https://html5test.com/
+https://caniuse.com/#search=canvas
+https://jqueryui.com/
+https://jquery.com/
