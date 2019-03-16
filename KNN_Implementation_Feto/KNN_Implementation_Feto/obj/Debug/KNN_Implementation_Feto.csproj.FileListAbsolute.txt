@@ -1,0 +1,7 @@
+C:\Users\Mo-Feto\source\repos\KNN_Implementation_Feto\KNN_Implementation_Feto\bin\Debug\KNN_Implementation_Feto.exe.config
+C:\Users\Mo-Feto\source\repos\KNN_Implementation_Feto\KNN_Implementation_Feto\bin\Debug\KNN_Implementation_Feto.exe
+C:\Users\Mo-Feto\source\repos\KNN_Implementation_Feto\KNN_Implementation_Feto\bin\Debug\KNN_Implementation_Feto.pdb
+C:\Users\Mo-Feto\source\repos\KNN_Implementation_Feto\KNN_Implementation_Feto\obj\Debug\KNN_Implementation_Feto.csprojAssemblyReference.cache
+C:\Users\Mo-Feto\source\repos\KNN_Implementation_Feto\KNN_Implementation_Feto\obj\Debug\KNN_Implementation_Feto.csproj.CoreCompileInputs.cache
+C:\Users\Mo-Feto\source\repos\KNN_Implementation_Feto\KNN_Implementation_Feto\obj\Debug\KNN_Implementation_Feto.exe
+C:\Users\Mo-Feto\source\repos\KNN_Implementation_Feto\KNN_Implementation_Feto\obj\Debug\KNN_Implementation_Feto.pdb
