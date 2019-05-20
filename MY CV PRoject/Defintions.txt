@@ -1,0 +1,127 @@
+The aspect Ratio
+if the  imag is 200x400 pixel
+and you adjust the image wideth only to be 100
+the height automatically will be 200 
+cuz the aspect ratio of the image is 1:2
+
+And this Work the same in the HTML
+
+
+
+inline elemets can't have padding on the top or buttom
+example  <span> 
+
+to make it have padding on the top you have to change
+the inline style of for example li
+to inline block so it have padding top
+
+
+
+you could use googel font 
+
+when you write something like that
+font-size: helvertica , monospace  it first try the first font family
+if it doesn't exist it goes and try the next one
+
+border-radius :50% makes a circule image
+there is higher  proirity for id more than classes
+
+the element padding  ; give space to the text in side the box.
+magrin : give space around the box of element border of it.
+
+
+
+Important : Negative Margin 
+
+when u want to make controled marign you could put them in
+same div so all margin to this div
+
+anticlock wise   : 
+20 40 60 80  top right bottm left when u make padding or margin
+
+styling some html elements that has type attrbiute acroding to specific type
+
+[type='radio']
+{
+css code\
+margin:50px;
+}
+[type='checkbox']
+{
+
+margin:50px;
+}
+
+
+very very important tip
+
+if we make style
+
+.p1{
+color:red;
+}
+.p2
+{
+
+color:blue;  !important
+}
+this order matter p1 came first then p2 overwritten it
+
+<h1 class=" p1 p2 "> Mohamed Fathallah   </h1>
+the order of writeing p1 p2 here in class attribute doesn't matter
+what the goal here is that h1 could take style form those two classes but the last class over any same element in the first sytle
+but id  will override anything if it came in any place
+
+
+body > specific classes> other class override> id> inline sytle  those are the order of style override
+the most powerfull thing is the !important
+
+.p2
+{
+
+color:blue;  !important
+}
+this override even the inline style
+background-color:
+color 
+# hex
+or 
+rgb()
+
+
+there is css variables
+
+Search USe Css variables to change several element at once
+
+--mohmaed-color:black;
+--mohamed-fontsize:25px;
+how to use
+backgound-color:var(--mohamed-color);
+if something wrong happen we want to use backup color to be showen if variable doesn't like we did in the font-faimly
+backgound-color:var(--mohamed-color,gray);
+
+it's advantage when you change the variable it automatically change in all element that use this variable.
+
+
+see the video  min 42  CSS Full course  codecamporg.com and try to use this idea ...
+
+
+the variable is only avaiable to the elements that inside the parent element so you should but them in body for causal using
+but to be more specific and professional it should be put into
+:root
+{
+
+
+}
+so it visible to all the element and you could overwite it as you wish
+
+@media 
+media queryies could be used to change variables
+and makes change in the css depend on the size of the screen
+
+search for 
+CSS Grid
+if we make 
+the container of some element it's display to grid
+
+
